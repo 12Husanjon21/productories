@@ -1,0 +1,284 @@
+/* :root {
+    --litest-grey: #EFEFEF;
+    --lite-grey: #D9D9D9;
+    --grey: #454444;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+} */
+
+
+
+/* .center {
+    width: min(90vw, 1120px);
+    margin: auto;
+}
+
+header {
+    min-width: 1440px;
+    height: 69px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--grey);
+    padding: 25px 95px;
+}
+
+.left-header {
+    display: flex;
+    column-gap: 1.5rem;
+}
+
+.left-header span {
+    cursor: pointer;
+}
+
+.left-header p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+
+.center-header {
+    display: flex;
+    column-gap: 17px;
+}
+
+.center-header p {
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.center-header span {
+    display: flex;
+    align-self: center;
+    width: 3px;
+    height: 30px;
+    background-color: #fff;
+}
+
+.center-header a {
+    font-size: 1.8rem;
+}
+
+.center-header a:active {
+    color: var(--lite-grey);
+}
+
+
+.rigth-header {
+    display: flex;
+    column-gap: 3rem;
+}
+
+.a {
+    display: flex;
+    cursor: pointer;
+} */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 1.8rem;
+}
+
+p {
+    font-family: "Inter", sans-serif;
+    font-size: 1.8rem;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+}
+
+  
+  main {
+    max-width: 1300px;
+    margin: auto;
+  }
+  main .Selected_items {
+    min-width: 1440px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    background-color: rgb(69, 68, 68);
+    color: white;
+  }
+  main .Selected_items .items {
+    display: flex;
+    align-items: center;
+  }
+  main .Selected_items .items2 {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  main .Selected_items .items2 div {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  @media screen and (width < 800px) {
+    main .Selected_items .items3 {
+      display: none;
+    }
+  }
+  main .content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+  }
+  main .content ul {
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  @media screen and (width < 800px) {
+    main .content ul {
+      display: none;
+    }
+  }
+  main .content ul li {
+    list-style: none;
+    font-size: 2rem;
+    color: #454444;
+    cursor: pointer;
+  }
+  main .content .basic {
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  @media screen and (width < 500px) {
+    main .content .basic {
+      flex-direction: column;
+    }
+  }
+  main .content .basic input {
+    width: 200px;
+    height: 41px;
+    border: none;
+    border-radius: 15px;
+    padding-left: 5px;
+    color: rgb(45, 45, 45);
+    background-color: rgb(217, 217, 217);
+  }
+  main .content .basic .part {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+  }
+  main .button_type {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem;
+  }
+  @media screen and (width < 600px) {
+    main .button_type {
+      flex-direction: column;
+    }
+  }
+  main .button_type button {
+    font-size: 2rem;
+    width: 160px;
+    height: 68px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    color: #454444;
+    font-weight: 700;
+    justify-content: center;
+    background: rgb(239, 239, 239);
+    cursor: pointer;
+    margin-bottom: 1rem;
+    border: none;
+  }
+  main .Shop_now {
+    border: none;
+    width: 95%;
+    height: 400px;
+    margin: auto;
+    margin-top: 1rem;
+    padding-top: 3rem;
+    background-color: #D9D9D9;
+    border-radius: 3px;
+  }
+  main .Shop_now h1 {
+    width: 400px;
+    margin: 2rem;
+  }
+  @media screen and (width < 500px) {
+    main .Shop_now h1 {
+      font-size: 25px;
+      width: 200px;
+    }
+  }
+  main .Shop_now button {
+    width: 191px;
+    height: 61px;
+    border-radius: 30px;
+    margin-inline: 2rem;
+    background-color: #454444;
+    color: #fff;
+    font-weight: 500;
+    font-size: 2.2rem;
+  }
+  main .container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    flex: 1;
+  }
+  main .container p {
+    width: 300px;
+  }
+  main .container li {
+    list-style: none;
+  }
+  main img {
+    width: 270px;
+    height: 300px;
+    padding-left: 10px;
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+  @media screen and (width < 931px) {
+    main img {
+      margin: auto;
+    }
+  }/*# sourceMappingURL=style.css.map */
