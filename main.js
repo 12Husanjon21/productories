@@ -1,6 +1,25 @@
-console.clear();
+
 
 const container = document.querySelector(".container");
+
+init();
+
+async function init() {
+  checkToken();
+  const products = await fetchProducts(); // array
+  render(products);
+}
+
+
+function checkToken() {
+  const token = localStorage.getItem("token");
+
+  if (!token) {
+    window.location.href = "http://127.0.0.1:5500/login.html";
+  }
+}
+
+
 function showSpinner() {
   const div = document.createElement("div");
   div.className = "spinner";
@@ -21,14 +40,13 @@ async function fetchProducts() {
 }
 
 
-async function init() {
-  const products = await fetchProducts(); // array
-  render(products);
-}
 
 function render(products) {
   products.forEach(function(product) { // object
     const li = document.createElement("li");
+    li.style.border = "2px solid #D9D9D9";
+    li.style.gap = "2rem";
+    li.style.padding = "20px";
    
     const img = document.createElement("img");
     img.src = product.image;
@@ -52,4 +70,3 @@ function render(products) {
     container.append(li);
   })
 }
-init();
